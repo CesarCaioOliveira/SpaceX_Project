@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 25px;
     width: 100%;
@@ -14,20 +14,26 @@ header {
     align-items: center;
 }
 
-.logo img {
+.logo img { /*Define valores da imagem*/
     height: 200px;
     width: auto;
+    display: block;
+}
+
+.logo { /*Define área clicável da imagem*/
+    height: 50px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
     display: flex;
-    justify-content: left;
     align-items: center;
     flex: 1 1 100%;
     width: 100%;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .opcao {
@@ -55,7 +61,7 @@ header {
 }
 
 .menu > .opcao + .opcao { /*Adiciona uma margem aos elementos do header sem afetar a distância da imagem*/
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .opcao:hover .submenu { 
@@ -77,4 +83,72 @@ header {
 
 .temsub:hover::after {
     opacity: 1;
+}
+
+.upcoming {
+    position: relative;
+    left: 500px;
+    font-size: 10px;
+    color: gray;
+    border: 0.3px solid gray;
+    border-radius: 2px;
+    display:block;
+    padding: 10px 10px 10px 5px;
+    font-weight: 600;
+}
+
+.upcoming::after {
+    margin-left: 70px;
+    font-size: 12px;
+    content: "T-16:00:00";
+}
+
+.missions {
+    margin-top: 20px;
+    font-weight: 400;
+    transform: translateX(200px);
+    gap: 50px;
+    transition: all 0.5s linear;
+}
+
+.opcao:hover .missions { 
+    opacity: 1;
+    transform: translateX(10px)
+}
+
+.sublogo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.launch {
+    border-bottom: 0.3px solid gray;
+    margin-bottom: -25px;
+    padding: 10px;
+}
+
+.launch::after {
+    content: "→";
+    position: absolute;
+    font-size: 20px;
+    right: -50px;
+    opacity: 0;
+}
+
+.launch:hover::after {
+    opacity: 1;
+}   
+
+.footer img{
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.footer {
+    margin-left: 50px;
+    font-weight: 400;
+    margin-top: 0px;
 }
