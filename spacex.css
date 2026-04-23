@@ -138,7 +138,7 @@ header {
     content: "→";
     position: absolute;
     font-size: 20px;
-    right: -50px;
+    right: -10px;
     opacity: 0;
 }
 
