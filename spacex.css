@@ -4,7 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Web_8fafe15a48.jpg);
-    background-position: center 35%;
+    background-position: center 30%;
+    background-size: 100%;
     overflow:hidden;
 }
 
@@ -94,7 +95,7 @@ header {
 .upcoming {
     position: relative;
     margin-left: auto;
-    margin-right: 127px;
+    margin-right: 120px;
     font-size: 10px;
     color: lightgray;
     border: 0.3px solid grey;
@@ -184,7 +185,7 @@ header {
 .centroTexto {
     max-width: 700px;
     margin-right: auto;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 .tituloCentro {
@@ -239,7 +240,7 @@ header {
 
 .toggle {
     margin-left: auto;
-    margin-right: -15px;
+    margin-right: 0;
     display:none;
     flex-direction: column;
     gap: 7px;
@@ -252,7 +253,7 @@ header {
     background: lightgray;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1420px) {
 
     .menu, .upcoming {
         display: none;
@@ -271,7 +272,7 @@ header {
     .centro {
         align-items: end;
         justify-content: left;
-        margin-top: -70px;
+        margin-top: -120px;
     }
 
     .centroTexto {
@@ -281,12 +282,17 @@ header {
     }
 
     .tituloCentro {
-        font-size: 34px;
+        font-size: 30px;
         margin-bottom: 5px;
+        line-height: 1.1;
     }
 
     .descCentro {
         margin-bottom: 10px;
+    }
+
+    .opcaoCentro {
+        padding: 15px 17px;
     }
 
     body {
