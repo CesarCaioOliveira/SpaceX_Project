@@ -55,12 +55,15 @@ header {
 }
 
 .submenu { /*Apenas dos itens do menu*/
+    list-style: none;
+
+    padding: 0;
     opacity: 0;
     position: absolute;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    top: 100%;
+    top: 30%;
     left: 0;
     transform: translateY(-100px);
     gap: 8px;
@@ -150,13 +153,13 @@ header {
     opacity: 1;
 }   
 
-.footer img{ /*Tecnicamente não é um footer mas achei mais fácil de nomear assim (É o que aparece na última linha do submenu missions*/
+.rodape img{ /*Tecnicamente não é um footer mas achei mais fácil de nomear assim (É o que aparece na última linha do submenu missions*/
     height: 15px;
     width: auto;
     margin-right: 10px;
 }
 
-.footer {
+.rodape {
     margin-left: 80px;
     font-weight: 400;
     margin-top: 0px;
